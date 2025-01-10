@@ -1,0 +1,222 @@
+/* CSS Reset */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* CSS Variables optional part  */
+:root{
+  --navbar-height:59px;
+}
+
+/* Navigation bar */
+#navbar{
+  display: flex;
+  align-content: center;
+  position: relative;
+  top: 0px;
+}
+#navbar::before{
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 80%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+/* Navigation bar : Logo ang Images*/
+#logo{
+ margin: 10px 30px;
+}
+
+#logo img{
+  height:60px;
+  width:120px;
+  margin: 1px 1px;
+}
+/* Navigation bar :List styling*/
+
+#navbar ul{
+  display: flex;
+  align-items: center;
+  
+}
+
+#navbar ul li{
+  list-style: none;
+  font-size: 1.2rem;
+  
+}
+#navbar ul li a{
+  color: white;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration:none;
+}
+
+#navbar ul li a:hover{
+  color:black;
+  background-color: white;
+  }
+
+  /* Home Section */
+  #home{
+    display: flex;
+    flex-direction: column;
+    height: 154px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #home::before{
+    content: "";
+    position: absolute;
+    background: url(../pump.jpeg) no-repeat center center/cover;
+    height: 62%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+  }
+   /* Services section */
+
+     #services{
+      
+      margin: 34px;
+      display: flex;
+}
+     #services .box{
+      border: 2px solid rgba(165, 42, 42, 0.306);
+      margin: 3px 2px;
+      border-radius: 10px;
+      background-color: rgba(199, 193, 193, 0.329);
+    
+     }
+     #services .box img{
+      padding-top: 4px;
+      height: 160px;
+      margin: auto;
+      display: block;
+      border-radius: 30px;
+     }
+     #services .box p{
+      font-family: "Baloo 2", serif;
+     }
+     
+
+/* Client Section */
+#client-section{
+ height: 344px;
+}
+#client-section::before{
+  content: "";
+  position: absolute;
+  background: url('../pg1.jpeg');
+  width: 100%;
+  height: 49%;
+  z-index: -1;
+  opacity: 0.2;
+  
+ }
+
+#clients{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.client-item{
+  padding: 34px;
+
+}
+
+#clients img{
+  height: 124px;
+  border-radius: 20px;
+}
+
+/* contact section */
+#contact{
+position: relative;
+}
+
+#contact::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  background: url("../contact3.jpg");
+  opacity: 0.7;
+  
+}
+#contact-box{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-bottom: 34px;   
+}
+
+
+#contact-box input, #contact-box textarea{
+   width: 100%;
+   padding: 0.5rem;
+}
+
+#contact-box form{
+  width: 40%;
+}
+
+#contact-box lable{
+  font-size: 1.9rem;
+  font-family: "Baloo 2", serif ;
+}
+
+/* footer section */
+footer{
+   background: black;
+   color: white;
+   padding: 9px 20px;
+}
+
+/* Utility classes */
+  #home h1{
+    color: white;
+    text-align: center;
+ }
+  #home p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Baloo 2", serif;
+  }
+
+  .h-primary{
+    
+    font-size: 2.9rem;
+    padding: 25px;
+  }
+  .h-secondary{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.9rem;
+    padding: 12px;
+  }
+  .btn{
+    padding: 6px 20px;
+    background-color:rgba(255, 255, 0, 0.539);
+    border:  2px solid white;
+    font-size: 1.2rem;
+    color: white;
+    margin: 17px ;
+    border-radius: 20px;
+  }
+  .center{
+    text-align: center;
+  }
